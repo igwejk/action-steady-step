@@ -1,0 +1,25 @@
+---
+name: Steady Step
+description: >-
+    Enables the option for dry-run execution of a step, consequently facilitating
+    integration testing of workflows
+inputs:
+    run:
+        description: "The command line to be executed as the step."
+        required: true
+    stub:
+        description: >-
+            Provided that the `STEADY_STEP_ACTION_MODE` environment variable is
+            set to `dry-run`, the `stub` command line will be executed to
+            simulate the outcome of `run` execution.
+        required: true
+outputs:
+    result:
+        description: Result of the actual step or stub execution.
+    stderr:
+        description: Any write to the standard error stream will be collected in this output.
+    stdout:
+        description: Any write to the standard output stream will be collected in this output.
+runs:
+    using: "node16"
+    main: "index.js"
