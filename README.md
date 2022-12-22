@@ -43,7 +43,7 @@ The standard output stream of `run` or `stub` is collected in this output.
 ```yaml
 id: a-strong-step-forwards
 name: Sparkle Deployment
-uses: actions/steady-step@v0.0.2
+uses: igwejk/action-steady-step@v0.0.4
 with:
   run: >-
     ./.github/step/sprinkle-magic-on-deployment.sh
@@ -62,7 +62,7 @@ This shows how to set output.
 ```yaml
 - id: how-to-set-output
   name: Demonstration of how to set steady step output
-  uses: actions/steady-step@v0.0.2
+  uses: igwejk/action-steady-step@v0.0.4
   with:
     run: >-
       echo 'result={ "actual": [ "json", "output" ] }' >> $GITHUB_OUTPUT
