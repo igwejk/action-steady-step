@@ -1,5 +1,9 @@
 ---
 name: Steady Step
+author: igwejk
+branding:
+    icon: anchor
+    color: green
 description: >-
     Enables the option for dry-run execution of a step, consequently facilitating
     integration testing of workflows
